@@ -1,4 +1,6 @@
-# MBTI 期权人格测试
+# MBTI Options Personality Test
+
+中文 | [English](#english)
 
 一个把 MBTI 人格和期权策略做成趣味测试的小网页。
 
@@ -6,7 +8,7 @@
 
 ## 在线体验
 
-部署完成后可通过 GitHub Pages 访问。
+[https://wepoets1107.github.io/mbti-options-personality-test/](https://wepoets1107.github.io/mbti-options-personality-test/)
 
 ## 内容
 
@@ -39,3 +41,49 @@ http://127.0.0.1:8787/
 打赏支持冰火岛社区
 
 EVM Wallet：0x29f091DAA3dfee8100645ee24239bCC3ae174B42
+
+---
+
+## English
+
+[中文](#mbti-options-personality-test) | English
+
+A playful static web test that maps MBTI personality types to options trading strategies.
+
+Answer 16 simple questions to discover your trader personality and receive a matching options personality card. Each card includes personality keywords, a matched strategy, and a payoff diagram, presented in a cyber-finance anime poster style.
+
+## Live Demo
+
+[https://wepoets1107.github.io/mbti-options-personality-test/](https://wepoets1107.github.io/mbti-options-personality-test/)
+
+## Features
+
+- 16 MBTI personality cards
+- 16 non-duplicated options strategies
+- Pure static website, no backend required
+- SignalPlus trading entry
+- Binghuodao community support information
+
+## Local Preview
+
+Run this command in the project directory:
+
+```bash
+python -m http.server 8787 --bind 127.0.0.1
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8787/
+```
+
+## Disclaimer
+
+This project is for entertainment and education. It is designed to help readers understand the personality flavor of different options strategies in a lighter way.
+
+## Support
+
+Support Binghuodao Community
+
+EVM Wallet: 0x29f091DAA3dfee8100645ee24239bCC3ae174B42
