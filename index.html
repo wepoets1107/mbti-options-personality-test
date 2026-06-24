@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MBTI 期权人格测试</title>
+    <meta
+      name="description"
+      content="16 道题，测出你的 MBTI 期权人格，并匹配一个适合你气质的期权策略。"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2305080d'/%3E%3Cpath d='M12 44L24 20L34 44L46 18L56 44' fill='none' stroke='%2300c8ff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">MBTI OPTIONS PERSONALITY</p>
+          <h1>MBTI 期权人格测试</h1>
+          <p class="hero-text">
+            16 道简单选择题，测出你的交易人格，再匹配一个最像你的期权策略。
+          </p>
+          <div class="hero-actions">
+            <button class="primary-btn" id="startButton" type="button">开始测试</button>
+            <button class="ghost-btn" id="galleryButton" type="button">查看图鉴</button>
+          </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="terminal-card">
+            <span>Delta</span>
+            <span>Gamma</span>
+            <span>Theta</span>
+            <span>Vega</span>
+          </div>
+          <div class="payoff-line"></div>
+          <div class="signal-chip">Long Straddle</div>
+        </div>
+      </section>
+
+      <section class="quiz hidden" id="quiz" aria-live="polite">
+        <div class="topbar">
+          <button class="text-btn" id="backButton" type="button">返回</button>
+          <div class="progress-wrap" aria-label="答题进度">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <span class="progress-text" id="progressText">1 / 16</span>
+        </div>
+
+        <article class="question-card">
+          <p class="question-kicker" id="questionAxis">E / I</p>
+          <h2 id="questionText"></h2>
+          <div class="answer-grid">
+            <button class="answer-btn" id="answerA" type="button"></button>
+            <button class="answer-btn" id="answerB" type="button"></button>
+          </div>
+        </article>
+      </section>
+
+      <section class="result hidden" id="result">
+        <div class="result-layout">
+          <div class="result-copy">
+            <p class="eyebrow">YOUR OPTION PERSONALITY</p>
+            <h2 id="resultTitle"></h2>
+            <p class="result-subtitle" id="resultSubtitle"></p>
+            <dl class="result-facts">
+              <div>
+                <dt>人格关键词</dt>
+                <dd id="resultTraits"></dd>
+              </div>
+              <div>
+                <dt>本命期权策略</dt>
+                <dd id="resultStrategy"></dd>
+              </div>
+              <div>
+                <dt>策略提醒</dt>
+                <dd id="resultRisk"></dd>
+              </div>
+            </dl>
+            <p class="result-note" id="resultNote"></p>
+            <div class="result-actions">
+              <button class="primary-btn" id="restartButton" type="button">再测一次</button>
+              <button class="ghost-btn" id="scrollGalleryButton" type="button">看全部人格</button>
+            </div>
+          </div>
+          <div class="result-visual" id="resultVisual"></div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">PERSONALITY GALLERY</p>
+          <h2>16 型期权人格图鉴</h2>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </section>
+
+      <section class="ad-cta">
+        <div>
+          <p class="eyebrow">SIGNALPLUS</p>
+          <h2>来 SignalPlus 一起交易期权</h2>
+          <p>测试只是入门，真正的期权世界在交易和复盘里。</p>
+        </div>
+        <a
+          class="primary-link"
+          href="https://t.signalplus.com/user/register?ref=JbCMzI"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          立即前往
+        </a>
+      </section>
+
+      <footer class="footer">
+        <p>打赏支持冰火岛社区</p>
+        <p>EVM Wallet：0x29f091DAA3dfee8100645ee24239bCC3ae174B42</p>
+      </footer>
+    </main>
+
+    <script src="./data.js?v=20260624-0839"></script>
+    <script src="./app.js?v=20260624-0839"></script>
+  </body>
+</html>

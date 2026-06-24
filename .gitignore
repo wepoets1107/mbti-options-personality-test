@@ -1,0 +1,12 @@
+# Local review artifacts
+local-review-*.png
+工作进度-*.md
+制作计划.md
+
+# One-off generation/fix scripts from drafting
+build_cards.py
+fix_*_payoff.py
+
+# OS/editor files
+.DS_Store
+Thumbs.db
