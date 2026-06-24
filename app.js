@@ -14,14 +14,6 @@ const questionText = document.querySelector("#questionText");
 const answerA = document.querySelector("#answerA");
 const answerB = document.querySelector("#answerB");
 const resultVisual = document.querySelector("#resultVisual");
-const ASSET_VERSION = "20260624-1515";
-
-function versionedAsset(src) {
-  if (!src) return src;
-  const joiner = src.includes("?") ? "&" : "?";
-  return `${src}${joiner}v=${ASSET_VERSION}`;
-}
-
 function show(section) {
   [home, quiz, result].forEach((item) => item.classList.add("hidden"));
   section.classList.remove("hidden");
@@ -119,7 +111,7 @@ function renderResult() {
   resultVisual.innerHTML = "";
   if (personality.image) {
     const image = document.createElement("img");
-    image.src = versionedAsset(personality.image);
+    image.src = personality.image;
     image.alt = `${personality.type} ${personality.name} ${personality.strategy}`;
     image.className = "result-image";
     image.addEventListener("error", () => {
@@ -144,7 +136,7 @@ function renderGallery() {
     item.type = "button";
     item.style.setProperty("--accent", personality.color);
     item.innerHTML = personality.image
-      ? `<img src="${versionedAsset(personality.image)}" alt="${personality.type} ${personality.name}" loading="lazy" />
+      ? `<img src="${personality.image}" alt="${personality.type} ${personality.name}" loading="lazy" />
          <span>${personality.type}</span>
          <strong>${personality.name}</strong>
          <small>${personality.strategy}</small>`
@@ -162,7 +154,7 @@ function renderGallery() {
       document.querySelector("#resultNote").textContent = personality.note;
       if (personality.image) {
         const image = document.createElement("img");
-        image.src = versionedAsset(personality.image);
+        image.src = personality.image;
         image.alt = `${personality.type} ${personality.name}`;
         image.className = "result-image";
         image.addEventListener("error", () => {
