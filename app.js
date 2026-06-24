@@ -14,7 +14,7 @@ const questionText = document.querySelector("#questionText");
 const answerA = document.querySelector("#answerA");
 const answerB = document.querySelector("#answerB");
 const resultVisual = document.querySelector("#resultVisual");
-const ASSET_VERSION = "20260624-0918";
+const ASSET_VERSION = "20260624-1515";
 
 function versionedAsset(src) {
   if (!src) return src;
